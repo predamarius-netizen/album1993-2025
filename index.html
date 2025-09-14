@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Class Album — 3‑Word Portraits</title>
+  <title>Albumul Clasei XII C</title>
   <style>
     :root{
       --bg:#f7f7fb;
@@ -22,18 +22,12 @@
     }
     header{
       position:sticky;top:0;z-index:20;
-      background:linear-gradient(180deg,#fff,hsla(0,0%,100%,.92));
-      backdrop-filter:saturate(1.2) blur(6px);
+      background:#fff;
       border-bottom:1px solid #ececf3;
-      text-align:center;
     }
     .wrap{max-width:1100px;margin:0 auto;padding:24px 20px}
-    h1{margin:0 0 4px;font-size:clamp(22px,3.6vw,36px);letter-spacing:.2px}
-    h2{margin:6px 0 0;font-size:clamp(18px,2.8vw,28px);color:var(--muted)}
-    .subtitle{margin:12px 0 0;color:var(--muted)}
-
-    .toolbar{display:flex;gap:12px;align-items:center;margin-top:14px;flex-wrap:wrap;justify-content:center}
-    .tag{padding:6px 10px;border:1px solid #e5e7eb;border-radius:999px;background:#fff;color:#374151;font-size:14px}
+    h1{margin:0 0 4px;font-size:clamp(22px,3.6vw,32px);letter-spacing:.2px}
+    .subtitle{margin:0;color:var(--muted)}
 
     main{padding:24px 0 56px}
     .album{
@@ -45,7 +39,7 @@
       border:1px solid #ececf3;
       border-radius:18px;
       box-shadow:0 1px 1px rgba(0,0,0,.02), 0 6px 24px rgba(17,24,39,.06);
-      padding:18px; display:flex; gap:14px; align-items:center;
+      padding:18px; display:flex; gap:14px; align-items:flex-start;
       transition: transform .12s ease, box-shadow .12s ease;
       page-break-inside: avoid;
     }
@@ -58,202 +52,61 @@
     .avatar::after{content:attr(data-initials);font-weight:800;color:#1e293b}
 
     .info{min-width:0}
-    .name{font-weight:700;letter-spacing:.2px}
-    .words{color:var(--muted);font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .name{font-weight:700;letter-spacing:.2px;margin-bottom:4px}
+    .words{color:var(--muted);font-size:14px;line-height:1.4;display:flex;flex-direction:column}
 
     footer{color:var(--muted);text-align:center;padding:32px 0}
-
-    @media print{
-      body{background:#fff}
-      header{position:static;background:#fff;border:none}
-      .wrap{padding:16px}
-      .card{box-shadow:none;border:1px solid #ddd}
-      .avatar{box-shadow:none}
-    }
   </style>
 </head>
 <body>
   <header>
     <div class="wrap">
-      <h1>Ienachita Vacarescu — Promotion XII C 1993 TEST</h1>
-      <h2>Promotion XII C — 1993</h2>
-      <p class="subtitle">Three‑word mottos chosen by each student (placeholders — edit per student).</p>
-      <div class="toolbar">
-        <span class="tag">Tip: Press <strong>Ctrl/Cmd+F</strong> to find a name quickly</span>
-        <span class="tag">Print‑friendly layout</span>
-      </div>
+      <h1>Ienachita Vacarescu — Promotia XII C 1993 </h1>
+      <p class="subtitle">Fotografia starii de spirit al clasei XII C cand membri ei aveau aproximativ o jumatate de secol</p>
     </div>
   </header>
 
   <main class="wrap">
     <section class="album">
-      <!-- Cards regenerated with motto-style placeholders -->
-
-      <article class="card">
-        <div class="avatar" data-initials="AC"></div>
-        <div class="info"><div class="name">Arghira Cornel</div><div class="words">Learn • Create • Share</div></div>
-      </article>
-
-      <article class="card">
-        <div class="avatar" data-initials="BD"></div>
-        <div class="info"><div class="name">Baicu Dan</div><div class="words">Think • Dare • Do</div></div>
-      </article>
-
-      <article class="card">
-        <div class="avatar" data-initials="BM"></div>
-        <div class="info"><div class="name">Banu Marius</div><div class="words">Aim • Build • Grow</div></div>
-      </article>
-
-      <article class="card">
-        <div class="avatar" data-initials="CC"></div>
-        <div class="info"><div class="name">Catana Calin</div><div class="words">Read • Reflect • Act</div></div>
-      </article>
-
-      <article class="card">
-        <div class="avatar" data-initials="CB"></div>
-        <div class="info"><div class="name">Chioaru Bogdan</div><div class="words">Work • Laugh • Repeat</div></div>
-      </article>
-
-      <article class="card">
-        <div class="avatar" data-initials="CM"></div>
-        <div class="info"><div class="name">Chivoiu Mihaela</div><div class="words">Dream • Plan • Achieve</div></div>
-      </article>
-
-      <article class="card">
-        <div class="avatar" data-initials="CA"></div>
-        <div class="info"><div class="name">Ciornei Alina</div><div class="words">Explore • Learn • Lead</div></div>
-      </article>
-
-      <article class="card">
-        <div class="avatar" data-initials="CI"></div>
-        <div class="info"><div class="name">Cojocaru Dragos Ionut</div><div class="words">Focus • Finish • Celebrate</div></div>
-      </article>
-
-      <article class="card">
-        <div class="avatar" data-initials="CA"></div>
-        <div class="info"><div class="name">Constantinescu Andra</div><div class="words">Respect • Help • Rise</div></div>
-      </article>
-
-      <article class="card">
-        <div class="avatar" data-initials="CL"></div>
-        <div class="info"><div class="name">Constantinescu Laura</div><div class="words">Try • Fail • Learn</div></div>
-      </article>
-
-      <article class="card">
-        <div class="avatar" data-initials="CS"></div>
-        <div class="info"><div class="name">Corneanu Sorana</div><div class="words">Imagine • Design • Deliver</div></div>
-      </article>
-
-      <article class="card">
-        <div class="avatar" data-initials="DM"></div>
-        <div class="info"><div class="name">Dulamea Melania</div><div class="words">Practice • Patience • Progress</div></div>
-      </article>
-
-      <article class="card">
-        <div class="avatar" data-initials="DL"></div>
-        <div class="info"><div class="name">Dunu Liana</div><div class="words">Listen • Care • Connect</div></div>
-      </article>
-
-      <article class="card">
-        <div class="avatar" data-initials="EE"></div>
-        <div class="info"><div class="name">Ene Toma Emanuel</div><div class="words">Question • Understand • Improve</div></div>
-      </article>
-
-      <article class="card">
-        <div class="avatar" data-initials="GM"></div>
-        <div class="info"><div class="name">Georgescu Mihaela</div><div class="words">Observe • Adapt • Evolve</div></div>
-      </article>
-
-      <article class="card">
-        <div class="avatar" data-initials="GC"></div>
-        <div class="info"><div class="name">Graur Catalin</div><div class="words">Build • Test • Iterate</div></div>
-      </article>
-
-      <article class="card">
-        <div class="avatar" data-initials="GO"></div>
-        <div class="info"><div class="name">Greculescu Oana</div><div class="words">Be • Here • Now</div></div>
-      </article>
-
-      <article class="card">
-        <div class="avatar" data-initials="HR"></div>
-        <div class="info"><div class="name">Holban Roxana</div><div class="words">Start • Move • Persist</div></div>
-      </article>
-
-      <article class="card">
-        <div class="avatar" data-initials="HD"></div>
-        <div class="info"><div class="name">Horjea Dragos</div><div class="words">Honesty • Effort • Courage</div></div>
-      </article>
-
-      <article class="card">
-        <div class="avatar" data-initials="IA"></div>
-        <div class="info"><div class="name">Ionicioiu Aura</div><div class="words">Learn • Share • Inspire</div></div>
-      </article>
-
-      <article class="card">
-        <div class="avatar" data-initials="MA"></div>
-        <div class="info"><div class="name">Mazilu Anca</div><div class="words">Calm • Clarity • Action</div></div>
-      </article>
-
-      <article class="card">
-        <div class="avatar" data-initials="NN"></div>
-        <div class="info"><div class="name">Niscov Narcis</div><div class="words">Curiosity • Grit • Growth</div></div>
-      </article>
-
-      <article class="card">
-        <div class="avatar" data-initials="PI"></div>
-        <div class="info"><div class="name">Pancu Irinel</div><div class="words">Prepare • Persist • Prevail</div></div>
-      </article>
-
-      <article class="card">
-        <div class="avatar" data-initials="PA"></div>
-        <div class="info"><div class="name">Petrescu Adelaida</div><div class="words">Kindness • Effort • Excellence</div></div>
-      </article>
-
-      <article class="card">
-        <div class="avatar" data-initials="PV"></div>
-        <div class="info"><div class="name">Petrescu Vicentiu</div><div class="words">Focus • Balance • Joy</div></div>
-      </article>
-
-      <article class="card">
-        <div class="avatar" data-initials="PM"></div>
-        <div class="info"><div class="name">Popa Mihai</div><div class="words">Think • Create • Serve</div></div>
-      </article>
-
-      <article class="card">
-        <div class="avatar" data-initials="PM"></div>
-        <div class="info"><div class="name">Preda Marius</div><div class="words">Try • Tweak • Triumph</div></div>
-      </article>
-
-      <article class="card">
-        <div class="avatar" data-initials="RA"></div>
-        <div class="info"><div class="name">Rosca Alin</div><div class="words">Teamwork • Trust • Thrive</div></div>
-      </article>
-
-      <article class="card">
-        <div class="avatar" data-initials="SR"></div>
-        <div class="info"><div class="name">Sicoe Radu</div><div class="words">Measure • Improve • Repeat</div></div>
-      </article>
-
-      <article class="card">
-        <div class="avatar" data-initials="SC"></div>
-        <div class="info"><div class="name">Stanescu Catalin</div><div class="words">Discipline • Courage • Vision</div></div>
-      </article>
-
-      <article class="card">
-        <div class="avatar" data-initials="SD"></div>
-        <div class="info"><div class="name">Stoica Dorian</div><div class="words">Ask • Seek • Find</div></div>
-      </article>
-
-      <article class="card">
-        <div class="avatar" data-initials="VV"></div>
-        <div class="info"><div class="name">Vrabie Valeriu</div><div class="words">Dream • Dare • Deliver</div></div>
-      </article>
+      
+      <article class="card"><div class="avatar" data-initials="AC"></div><div class="info"><div class="name">Arghira Cornel</div><div class="words"><span>Learn</span><span>Create</span><span>Share</span></div></div></article>
+      <article class="card"><div class="avatar" data-initials="BD"></div><div class="info"><div class="name">Baicu Dan</div><div class="words"><span>Think</span><span>Dare</span><span>Do</span></div></div></article>
+      <article class="card"><div class="avatar" data-initials="BM"></div><div class="info"><div class="name">Banu Marius</div><div class="words"><span>Aim</span><span>Build</span><span>Grow</span></div></div></article>
+      <article class="card"><div class="avatar" data-initials="CC"></div><div class="info"><div class="name">Catana Calin</div><div class="words"><span>Read</span><span>Reflect</span><span>Act</span></div></div></article>
+      <article class="card"><div class="avatar" data-initials="CB"></div><div class="info"><div class="name">Chioaru Bogdan</div><div class="words"><span>Work</span><span>Laugh</span><span>Repeat</span></div></div></article>
+      <article class="card"><div class="avatar" data-initials="CM"></div><div class="info"><div class="name">Chivoiu Mihaela</div><div class="words"><span>Dream</span><span>Plan</span><span>Achieve</span></div></div></article>
+      <article class="card"><div class="avatar" data-initials="CA"></div><div class="info"><div class="name">Ciornei Alina</div><div class="words"><span>Explore</span><span>Learn</span><span>Lead</span></div></div></article>
+      <article class="card"><div class="avatar" data-initials="CI"></div><div class="info"><div class="name">Cojocaru Dragos Ionut</div><div class="words"><span>Focus</span><span>Finish</span><span>Celebrate</span></div></div></article>
+      <article class="card"><div class="avatar" data-initials="CA"></div><div class="info"><div class="name">Constantinescu Andra</div><div class="words"><span>Respect</span><span>Help</span><span>Rise</span></div></div></article>
+      <article class="card"><div class="avatar" data-initials="CL"></div><div class="info"><div class="name">Constantinescu Laura</div><div class="words"><span>Try</span><span>Fail</span><span>Learn</span></div></div></article>
+      <article class="card"><div class="avatar" data-initials="CS"></div><div class="info"><div class="name">Corneanu Sorana</div><div class="words"><span>Imagine</span><span>Design</span><span>Deliver</span></div></div></article>
+      <article class="card"><div class="avatar" data-initials="DM"></div><div class="info"><div class="name">Dulamea Melania</div><div class="words"><span>Practice</span><span>Patience</span><span>Progress</span></div></div></article>
+      <article class="card"><div class="avatar" data-initials="DL"></div><div class="info"><div class="name">Dunu Liana</div><div class="words"><span>Listen</span><span>Care</span><span>Connect</span></div></div></article>
+      <article class="card"><div class="avatar" data-initials="EE"></div><div class="info"><div class="name">Ene Toma Emanuel</div><div class="words"><span>Question</span><span>Understand</span><span>Improve</span></div></div></article>
+      <article class="card"><div class="avatar" data-initials="GM"></div><div class="info"><div class="name">Georgescu Mihaela</div><div class="words"><span>Observe</span><span>Adapt</span><span>Evolve</span></div></div></article>
+      <article class="card"><div class="avatar" data-initials="GC"></div><div class="info"><div class="name">Graur Catalin</div><div class="words"><span>Build</span><span>Test</span><span>Iterate</span></div></div></article>
+      <article class="card"><div class="avatar" data-initials="GO"></div><div class="info"><div class="name">Greculescu Oana</div><div class="words"><span>Be</span><span>Here</span><span>Now</span></div></div></article>
+      <article class="card"><div class="avatar" data-initials="HR"></div><div class="info"><div class="name">Holban Roxana</div><div class="words"><span>Start</span><span>Move</span><span>Persist</span></div></div></article>
+      <article class="card"><div class="avatar" data-initials="HD"></div><div class="info"><div class="name">Horjea Dragos</div><div class="words"><span>Honesty</span><span>Effort</span><span>Courage</span></div></div></article>
+      <article class="card"><div class="avatar" data-initials="IA"></div><div class="info"><div class="name">Ionicioiu Aura</div><div class="words"><span>Learn</span><span>Share</span><span>Inspire</span></div></div></article>
+      <article class="card"><div class="avatar" data-initials="MA"></div><div class="info"><div class="name">Mazilu Anca</div><div class="words"><span>Calm</span><span>Clarity</span><span>Action</span></div></div></article>
+      <article class="card"><div class="avatar" data-initials="NN"></div><div class="info"><div class="name">Niscov Narcis</div><div class="words"><span>Curiosity</span><span>Grit</span><span>Growth</span></div></div></article>
+      <article class="card"><div class="avatar" data-initials="PI"></div><div class="info"><div class="name">Pancu Irinel</div><div class="words"><span>Prepare</span><span>Persist</span><span>Prevail</span></div></div></article>
+      <article class="card"><div class="avatar" data-initials="PA"></div><div class="info"><div class="name">Petrescu Adelaida</div><div class="words"><span>Kindness</span><span>Effort</span><span>Excellence</span></div></div></article>
+      <article class="card"><div class="avatar" data-initials="PV"></div><div class="info"><div class="name">Petrescu Vicentiu</div><div class="words"><span>Focus</span><span>Balance</span><span>Joy</span></div></div></article>
+      <article class="card"><div class="avatar" data-initials="PM"></div><div class="info"><div class="name">Popa Mihai</div><div class="words"><span>Think</span><span>Create</span><span>Serve</span></div></div></article>
+      <article class="card"><div class="avatar" data-initials="PM"></div><div class="info"><div class="name">Preda Marius</div><div class="words"><span>Try</span><span>Tweak</span><span>Triumph</span></div></div></article>
+      <article class="card"><div class="avatar" data-initials="RA"></div><div class="info"><div class="name">Rosca Alin</div><div class="words"><span>Teamwork</span><span>Trust</span><span>Thrive</span></div></div></article>
+      <article class="card"><div class="avatar" data-initials="SR"></div><div class="info"><div class="name">Sicoe Radu</div><div class="words"><span>Measure</span><span>Improve</span><span>Repeat</span></div></div></article>
+      <article class="card"><div class="avatar" data-initials="SC"></div><div class="info"><div class="name">Stanescu Catalin</div><div class="words"><span>Discipline</span><span>Courage</span><span>Vision</span></div></div></article>
+      <article class="card"><div class="avatar" data-initials="SD"></div><div class="info"><div class="name">Stoica Dorian</div><div class="words"><span>Ask</span><span>Seek</span><span>Find</span></div></div></article>
+      <article class="card"><div class="avatar" data-initials="VV"></div><div class="info"><div class="name">Vrabie Valeriu</div><div class="words"><span>Dream</span><span>Dare</span><span>Deliver</span></div></div></article>
 
     </section>
   </main>
 
   <footer>
-    Made with ♥ — Edit words in the HTML. You can also print or export to PDF.
+    Realizat cu ♥ — Editați mottourile direct în HTML. Puteți lista sau exporta în PDF.
   </footer>
 </body>
 </html>
